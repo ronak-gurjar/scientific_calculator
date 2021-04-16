@@ -12,8 +12,6 @@
 #include<conio.h>
 using namespace std;
 
-
-
 int simple(); //function 1
 int complex(); //function 2
 
@@ -31,38 +29,28 @@ main()
 	
 	cout<<"\nchoose the option:";
 	cin>>option;
-	
-
 	while(1)
 	{
-	
 		switch(option)
 		{
 			case 1: 
-					simple(); //function 1 calling
-					break;
-					
-				
-			case 2:
-					complex(); //function 2 calling
-			    	break;
-			
-			case 3:
-				    exit(1); //exit the program
-					return 0;
-					break;
-				
-			default:
-					cout<<"\n\nwrong option!!! choose the write option\n";
-					cout<<"\nchoose the option:";
-					cin>>option;
-					break;
-			
-       	}
-      
-       
-	
+				simple(); //function 1 calling
+				break;
 
+			case 2:
+				complex(); //function 2 calling
+				break;
+			case 3:
+				exit(1); //exit the program
+				return 0;
+				break;
+			default:
+				cout<<"\n\nwrong option!!! choose the write option\n";
+				cout<<"\nchoose the option:";
+				cin>>option;
+				break;
+       	 	}
+     
    }
    return 0;
    return 0;
@@ -72,7 +60,6 @@ int simple()
 {
 	// simple calculation menu
 	
-
 	float a,b,add,sub,mul,div;
 	int sim;
 
@@ -85,8 +72,6 @@ int simple()
 	cout<<"\n 5 : complex";
 	cout<<"\n 6 : exit";
 
-	
-	
 	cout<<"\n-------------------------------\n";
 	
 	cout<<"\n\nchoose the option:";
@@ -99,7 +84,7 @@ int simple()
 			return main();
 			return 0;
 		
-	    case 1:
+	    	case 1:
 	  		cout<<"\nenter the value of a:";
 			cin>>a;
 			cout<<"\nenter the value of b:";
@@ -138,15 +123,9 @@ int simple()
 				exit(1);
 				return 0;
 				break;
-				
-	
 			
-			
-		
-		     
 		default:
-			cout<<"\n\nwrong option !!! choose the write option";
-			
+			cout<<"\n\nwrong option !!! choose the write option";		
 			break;
 	}
 	
@@ -159,7 +138,6 @@ int complex()
 	int com;
 	const float PI=3.14159;
 
-	
 	cout<<"\n\n---------- COMPLEX ------------\n";
 	cout<<"\n 0  : main menu";
 	cout<<"\n 1  : sin";
